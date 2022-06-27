@@ -4,11 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/USER/AndroidStudioProjects/Tubes/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.153" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Tubes/app/src/main/res/drawable/circle_button.xml" value="0.188" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Tubes/app/src/main/res/drawable/ic_launcher_background.xml" value="0.153" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Tubes/app/src/main/res/drawable/rounded_button.xml" value="0.1785" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Tubes/app/src/main/res/drawable/rounded_button2.xml" value="0.1785" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Tubes/app/src/main/res/layout-v21/activity_alarm.xml" value="0.1796875" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Tubes/app/src/main/res/layout/activity_alarm.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Tubes/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Tubes/app/src/main/res/layout/activity_sleep.xml" value="0.17346014492753623" />
       </map>
     </option>
   </component>

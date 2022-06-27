@@ -11,39 +11,14 @@
         android:id="@+id/start_sleeping"
         android:layout_width="338dp"
         android:layout_height="54dp"
+        android:layout_marginBottom="46dp"
         android:background="@drawable/rounded_button"
         android:text="Start Sleeping"
         android:textSize="16dp"
         android:textStyle="bold"
-        android:layout_marginBottom="46dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/good_night"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:text="20 : 30"
-        android:textColor="#FFFFFF"
-        android:textSize="48dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/clock" />
-
-    <TextView
-        android:id="@+id/clock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Good Night"
-        android:textSize="16dp"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="55dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/alarm_button"
@@ -51,13 +26,49 @@
         android:layout_height="wrap_content"
         android:width="150dp"
         android:height="40dp"
-        android:textSize="20dp"
-        android:onClick="launchAlarmActivity"
+        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_button2"
+        android:drawableLeft="@drawable/ic_alarm"
         android:text="04:00"
-        android:layout_marginTop="262dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/good_night"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Good Night"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/current_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:textColor="#FFFFFF"
+        android:text=""
+        android:textSize="48sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/good_night" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current_time"
+        app:srcCompat="@drawable/progress" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

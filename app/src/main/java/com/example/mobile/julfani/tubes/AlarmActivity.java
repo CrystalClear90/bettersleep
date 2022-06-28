@@ -13,10 +13,16 @@ public class AlarmActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarm);
         findViewById(R.id.exit_button).setOnClickListener(this::launchMainActivity);
+        findViewById(R.id.start_sleeping).setOnClickListener(this::launchSleepingActivity);
     }
 
     public void launchMainActivity(View view){
         Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void launchSleepingActivity(View view){
+        Intent intent = new Intent(this, SleepActivity.class);
         startActivity(intent);
     }
 }

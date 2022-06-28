@@ -15,8 +15,6 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
     private TextView currentTimeTextView;
-    private int hours;
-    private int minutes;
     Handler handler;
 
     @Override
@@ -25,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         findViewById(R.id.start_sleeping).setOnClickListener(this::launchSleepingActivity);
         findViewById(R.id.alarm_button).setOnClickListener(this::launchAlarmActivity);
-        currentTimeTextView =findViewById(R.id.current_time);
         runClock();
     }
 
@@ -40,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void runClock(){
+        currentTimeTextView =findViewById(R.id.current_time);
+
         handler = new Handler(Looper.getMainLooper());
 
         handler.post(new Runnable() {

@@ -9,30 +9,29 @@
 
     <Button
         android:id="@+id/start_sleeping"
-        android:layout_width="338dp"
-        android:layout_height="54dp"
-        android:layout_marginBottom="46dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
         android:background="@drawable/rounded_button"
         android:text="Start Sleeping"
-        android:textSize="16dp"
+        android:textSize="13sp"
         android:textStyle="bold"
+        android:drawableLeft="@drawable/moon"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/alarm_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:width="150dp"
         android:height="40dp"
-        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_button2"
         android:drawableLeft="@drawable/ic_alarm"
         android:text="04:00"
         android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
@@ -53,12 +52,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="22dp"
-        android:textColor="#FFFFFF"
         android:text=""
+        android:textColor="#FFFFFF"
         android:textSize="48sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/good_night"
+        app:layout_constraintEnd_toEndOf="@id/good_night"
         app:layout_constraintTop_toBottomOf="@+id/good_night" />
 
     <ImageView
@@ -66,8 +65,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/current_time"
+        app:layout_constraintStart_toStartOf="@id/current_time"
         app:layout_constraintTop_toBottomOf="@+id/current_time"
         app:srcCompat="@drawable/progress" />
 

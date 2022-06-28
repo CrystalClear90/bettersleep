@@ -18,5 +18,27 @@
         app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/exit" />
 
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:headerBackground="@color/warna2"
+        android:numbersSelectorColor="@color/warna1"
+        android:numbersTextColor="@color/warna2"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exit_button" />
+
+    <Button
+        android:id="@+id/start_sleeping"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_button"
+        android:text="Start Sleeping"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/moon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

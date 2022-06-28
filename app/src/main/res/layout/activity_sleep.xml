@@ -8,34 +8,54 @@
     android:clipChildren="false"
     tools:context=".SleepActivity">
 
-    <com.ncorti.slidetoact.SlideToActView
-        android:layout_width="170dp"
-        android:layout_height="wrap_content"
-        android:rotation="270"
-        app:area_margin="-8dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="80dp"
-        app:outer_color="#9D91FF"
-        app:slider_height="52dp"
-        app:slider_icon="@drawable/moon"
-        app:slider_icon_color="@color/warna1"
-        app:text=""
-        app:text_color="@color/black"
-        app:text_style="bold" />
-
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/good_night"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Swipe up to Awake"
+        android:layout_marginTop="55dp"
+        android:text="Good Night"
+        android:textColor="#FFFFFF"
         android:textSize="16sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:layout_marginBottom="45dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/current_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/good_night"
+        app:layout_constraintEnd_toEndOf="@id/good_night"
+        app:layout_constraintTop_toBottomOf="@+id/good_night" />
+
+    <Button
+        android:id="@+id/end_sleep"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_button"
+        android:text="End Sleep"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/sun"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_remaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/end_sleep"
+        app:layout_constraintEnd_toEndOf="@+id/current_time"
+        app:layout_constraintStart_toStartOf="@+id/current_time"
+        app:layout_constraintTop_toBottomOf="@+id/current_time" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
